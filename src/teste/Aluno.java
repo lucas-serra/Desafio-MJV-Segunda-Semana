@@ -10,10 +10,19 @@ public class Aluno {
 	File file;
 	String nome;
 	String matricula;
+	String informacao;
+	String endereco;
+	String esporte;
 	
-	Aluno(String nome, String matricula){
+	
+	Aluno(String nome, String matricula, String informacao,String endereco,String esporte){
 		this.nome = nome;
 		this.matricula = matricula;
+		this.informacao = informacao;
+		this.endereco = endereco;
+		this.esporte = esporte;
+		
+		
 	}
 
 	public File getFile() {
@@ -31,6 +40,9 @@ public class Aluno {
 					FileWriter arqTxt = new FileWriter(file.getPath());
 					arqTxt.write("Nome: " + this.nome + "\n");
 					arqTxt.write("Matrícula: " + this.matricula + "\n");
+					arqTxt.write("Informação: " + this.informacao + "\n");
+					arqTxt.write("Informação: " + this.endereco + "\n");
+					arqTxt.write("Informação: " + this.esporte + "\n");
 					arqTxt.close();
 					System.out.println("Arquivo do aluno preenchido com informações");
 				} catch (IOException e) {
