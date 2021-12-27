@@ -111,6 +111,9 @@ Retorna:
 
 ### Método sobrecarregado:
 
+Um método sobrecarregado da classe Path é o startsWith, seu retorno é um boolean e pode receber uma String como parâmetro ou um Path. Esse
+método testa se um caminho começa com o parâmetro passado.
+
 ## Classe Paths
 
 ### Descrição:
@@ -192,4 +195,7 @@ System.out.println(path);
 https://github.com/patyspro/challengemjv
 ```
 
-### Método sobrecarregado
+### Método sobrecarregado:
+
+A classe Paths possui apenas o parâmetro get que é sobrecarregado. É um método statico que retorna um Path. Pode receber uma ou várias Strings ou uma URI.
+Ele converte uma string ou uma sequência de strings (ou uma URI em sua sobrecarga) em um Path como já descrito acima.
